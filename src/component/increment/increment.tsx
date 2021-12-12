@@ -41,7 +41,7 @@ export default function Increment() {
   };
 
   return (
-    <div className="App">
+    <div>
       <h1>Increment</h1>
       <form className="formIncrement">
         <input type="number" {...bind} />

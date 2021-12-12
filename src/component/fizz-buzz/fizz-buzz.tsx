@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useInputNumber } from "../../utils/hooks/use-input-number";
-import "./fizz-buzz.css";
 
 export default function FizzBuzz() {
   const { value, bind } = useInputNumber(0);
@@ -30,9 +29,9 @@ export default function FizzBuzz() {
   }, [value]);
 
   return (
-    <div className="App">
+    <div>
       <h1>FizzBuzz</h1>
-      <form className="formFizzBuzz">
+      <form>
         <label>N = </label>
         <input type="number" {...bind} />
       </form>
